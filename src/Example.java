@@ -1,28 +1,66 @@
-public class Example {
-    public static void main(String[] args) {
-        int num = 100;
-        System.out.println(num);
-    }
-}
 public class Main {
     public static void main(String[] args) {
-        int x = 10;
-        int y = 7;
-
-        if (x > y) {
-            System.out.println("x-n mec e");
-        }
-
-        if (y > x) {
-            System.out.println("y-n mec e");
-        }
 
         for (int i = 1; i <= 5; i++) {
-            System.out.println(i);
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
         }
 
-        int a = 5;
-        int b = 7;
-        System.out.println(a + b);
+        System.out.println();
 
-        int n = 3;
+        for (int i = 5; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 5 - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        for (int i = 5; i >= 1; i--) {
+            for (int j = 1; j <= 5 - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 5 - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        for (int i = 4; i >= 1; i--) {
+            for (int j = 1; j <= 5 - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
